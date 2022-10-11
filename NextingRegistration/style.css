@@ -1,0 +1,291 @@
+body{
+    margin: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue !important;
+}
+.holder{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.logoHolder{
+    width: 30%;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logoHolder p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.logoHolder button{
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 30%;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.reg{
+    width: 69%;
+    height: 650px !important;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    position: relative;
+    padding: 40px 0px 0px 0px;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.indicatorHolder{
+    position: absolute;
+    top:0px;
+    right: 0;
+    margin-top: -50px !important;
+    height: 90px;
+    width: 90%;
+    margin: auto;
+    background:transparent;
+}
+
+#steps{ /*Indicators*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-left: -3px;
+}
+
+#steps button span{
+    margin-left: 970px; 
+}
+#steps button{
+    width: 20%;
+    height: auto;
+    background-color: blue;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+}
+
+#steps button.active{
+    background-color: green !important;
+}
+.carousel-item{/*content Div for Forms*/
+width: 100%;
+height: 600px;
+padding-top: 30px;
+}
+@media(max-width:1000px){
+    #steps button{
+        padding-left: 40px;
+    }
+}
+
+#next{
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+    border: none;
+    width: 10%;
+    border-radius: 10px;
+    background: blue;
+    color: white;
+    font-size: 16px;
+}
+/*Form 1 */
+.form-1{
+  width: 100%;
+  padding-left: 30px;
+}
+.form-1-Holder{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.form-1-Text{
+    width: 100%;
+    padding: 10px;
+    font-size:18px;
+}
+.form-1-Input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-1-Input button{
+    border: none;
+    background:transparent;
+}
+.form-1-Input input{
+    border-radius: 7px;
+    padding-left: 10px;
+    width: 70%;
+}
+/*Form 2 */
+.form-2Hold{
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-2-Holder1{
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+  }
+  .form-2-Holder2{
+    display: flex;
+    width: 50%;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+  .form-2-Text{
+      width: 50%;
+      padding: 10px;
+      font-size:18px;
+  }
+
+  .form-2-Input{
+      width: 50%;
+      padding: 10px;
+      font-size: 18px;
+  }
+  .form-2-Input select{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+  .form-2-Input input{
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .form-2-Text textarea{
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  /*Form 3 */
+  .form-3{
+    width: 100%;
+}
+.form-3Hold{
+    width: 100%;
+    padding: 15px 0px 0px 30px;
+    font-size: 18px;
+}
+.form-3Hold select{
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/*Form 4 */
+.form-4{
+    width: 100%;
+}
+.form-4Hold{
+    width: 100%;
+    padding: 15px 0px 0px 30px;
+    font-size: 18px;
+}
+.form-4Hold select{
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+.form-4Hold button{
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    border: none;
+    animation: dan  2s  ease-in-out infinite;
+}
+@keyframes dan{
+    0%{transform: scale(0.8);}
+    100%{
+        transform: scale(0.8);
+        background-color: green;
+    }
+    
+}
+@media(max-width:1000px){
+    .holder, 
+    .form-1-Holder,
+     .form-2Hold, 
+     .form-2-Holder1, 
+     .form-2-Holder2{
+        display: block;
+    }
+
+    .form-2-Text, 
+    .form-2-Input
+    .form-1-Text, 
+    .form-1-Input, 
+    .form-1-Input input,
+    .logoHolder,
+    .form-2-Holder1, 
+    .form-2-Holder2,
+    .form-1-Text, 
+    .form-2-Input, 
+    .form-2-Input input,
+    .form-2-Text textarea{
+        width: 100%;
+    }
+    .reg{
+        width: 97%;
+        margin: auto;
+        height: auto !important;
+        padding-bottom: 30px;
+
+    }
+      
+    .form-3Hold, 
+    .form-3Hold select,
+    .form-4Hold, 
+    .form-4Hold select{
+        width: 98%;
+    }
+   
+    .carousel-item{
+        height: auto;
+        padding-bottom: 50px;
+    }
+   #next{
+       width: 20%;
+       margin-top: -40px !important;
+   }
+   
+    #gender{
+        width: 100%;
+        display: flex;
+    }
+    .form-1-Input span{
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .form-1-Input, .form-2-Input{
+        padding-top: 0px;
+    }
+    #employ{
+        width: 100%;
+    }
+
+}

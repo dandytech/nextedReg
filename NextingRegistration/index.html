@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisration_Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap.min2.css">
+</head>
+<body>
+    <div class="holder">
+        <div class="logoHolder">
+            <div class="logo">
+                <img src="/images/logo1.jpg" width="100%" alt="logo">
+            </div>
+            <div class="logotext text-center">
+                <h2>REGISTRATION PORTAL</h2>
+                <p>Welcome to our portal!!! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis neque fugit repudiandae iusto similique, dolore reprehenderit.</p>
+                <p><button type="button">Login</button></p>
+            </div>
+        </div>
+
+    <div class="reg">
+
+    <!--Carousel For registration-->
+    <div id="reg" class="carousel slide" data-bs-ride="carousel"
+        data-bs-interval="false" 
+    >
+     <!--data-bs-interval =false stops the automatic sliding-->
+        <!-- Indicators-->
+        <div class="indicatorHolder">
+            <div id="steps" class="carousel-indicators">
+                <button
+                 type="button"
+                  data-bs-target="#reg"
+                   data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    ><span>Step 1</span></button>
+                <button  type="button" data-bs-target="#reg" data-bs-slide-to="1" ><span>Step 2</span></button>
+                <button  type="button" data-bs-target="#reg" data-bs-slide-to="2" ><span>Step 3</span></button>
+                <button  type="button" data-bs-target="#reg" data-bs-slide-to="3" ><span>Step 4</span></button>
+            </div>
+        </div>
+        
+        
+
+
+        <!--The slide show-->
+        <div class="carousel-inner">
+            <!--Form 1-->
+            <div class="carousel-item active">
+                <form action="">
+                    <div class="form-1">
+
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                <h2>PERSONAL PROFILE</h2>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Photo
+                            </div>
+                            <div class="form-1-Input">
+                                <input type="file">
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Full Name
+                            </div>
+                            <div class="form-1-Input">
+                                <label for="Full name">(Automatically filled from subscription page)</label>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Email Address
+                            </div>
+                            <div class="form-1-Input">
+                                <label for="Email address">(Automatically filled from subscription page)</label>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Phone Number
+                            </div>
+                            <div class="form-1-Input">
+                                <label for="Phone number">(Automatically filled from subscription page)</label>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Gender
+                            </div>
+                            <div class="form-1-Input">
+                                <select  id="gender" name="gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <span>Marital Status</span>
+                                    &nbsp;
+                                <select name="gender" id="gender">
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="divorced">Divorced</option>
+                                    <option value="widow">Widow</option>
+                                    <option value="Widower">Widower</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Date of Birth
+                            </div>
+                            <div class="form-1-Input">
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Employment Status
+                            </div>
+                            <div class="form-1-Input">
+                                <select id="employ" name="employmentStatus" >
+                                    <option value="Employed">Employed</option>
+                                    <option value="Unemployed">Unemployed</option>
+                                    <option value="Self-employed"> Self Employed</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                Occupation
+                            </div>
+                            <div class="form-1-Input">
+                                <input type="text" placeholder="Occupation here">
+                            </div>
+                        </div>
+                        <div class="form-1-Holder">
+                            <div class="form-1-Text">
+                                If given the opportunity, what would you like to learn?
+                            </div>
+                            <div class="form-1-Input">
+                                <input type="text" placeholder="Type here">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+<!--Form 2-->
+            <div class="carousel-item">
+                <form action="">
+                    <div class="form-2Hold">
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                                <h2>ADDRESS DETAILS</h2>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="form-2Hold">
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                                Country of Residence
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="country" id="country">
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Cameron">Cameron</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Gambia">Gambia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                state of Residence
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="country" id="country">
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Ebonyi">Ebonyi</option>
+                                    <option value="Edo">Edo</option>
+                                    <option value="Delta">Delta</option>
+                                    <option value="Rivers">Rivers</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-2Hold">       
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                                Local Government Area of Residence
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="city" id="country">
+                                    <option value="Ikeja">Ikeja</option>
+                                    <option value="">Ajah</option>
+                                    <option value="">Fagba</option>
+                                    <option value="">Surulele</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                City
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="country" id="country">
+                                    <option value="">Ogba</option>
+                                    <option value="">Festac</option>
+                                    <option value="">Lekki</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-2Hold">
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                                Home Address
+                            <br>
+                            
+                                <textarea name="homeAddress" id="" cols="57" rows="3" placeholder="Type Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                Business Address
+                            <br>
+                                <textarea name="business" id="" cols="57" rows="3" placeholder="Type Here"></textarea>
+                            </div>
+                        </div>
+                    </div> 
+    
+                    <div class="form-2Hold">       
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                               State of origin
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="country" id="country">
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Ebonyi">Ebonyi</option>
+                                    <option value="Edo">Edo</option>
+                                    <option value="Delta">Delta</option>
+                                    <option value="Rivers">Rivers</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                Local government of Residence
+                            </div>
+                            <div class="form-2-Input">
+                                <select name="country" id="country">
+                                    <option value="Ikeja">Ikeja</option>
+                                    <option value="">Ajah</option>
+                                    <option value="">Fagba</option>
+                                    <option value="">Surulele</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-2Hold">       
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                               Password
+                            </div>
+                            <div class="form-2-Input">
+                                <input type="password" placeholder="Password Here">
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                Confirm Password
+                            </div>
+                            <div class="form-2-Input">
+                                <input type="password" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-2Hold">       
+                        <div class="form-2-Holder1">
+                            <div class="form-2-Text">
+                               Business Number
+                            </div>
+                            <div class="form-2-Input">
+                                <input type="text" placeholder=" Enter Business no">
+                            </div>
+                        </div>
+                        <div class="form-2-Holder2">
+                            <div class="form-2-Text">
+                                WhatsApp Number
+                            </div>
+                            <div class="form-2-Input">
+                                <input type="text" placeholder="Enter WhatsApp no">
+                            </div>
+                        </div>
+                    </div>
+                </form>      
+             </div>
+           
+        <!--Form 3-->
+            <div class="carousel-item">
+                <form action="">
+                    <div class="form-3">
+                        <div class="form-3Hold">
+                            <h2>ANSWER THE FOLLOWING QUESTIONS</h2>
+                        </div>
+    
+                        <div class="form-3Hold">
+                            <p>Is your Business or Idea registered?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                                <option value="">Biased</option>
+                            </select>
+                        </div>
+                        <div class="form-3Hold">
+                            <p>Is your Business/Idea Profit oriented or non-profit oriented?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                                <option value="">Not known yet</option>
+                            </select>
+                        </div>
+                        <div class="form-3Hold">
+                            <p>Can this business idea generate income now and in the future?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                            </select>
+                        </div>
+                        <div class="form-3Hold">
+                            <p>What Stage is your business currently?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">Beginner</option>
+                                <option value="">Small/Intermediate</option>
+                                <option value="">Large scale</option>
+                            </select>
+                        </div>
+                        <div class="form-3Hold">
+                            <p>which of the following areas of intellectual property ownership best applies to your business?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">One man Business</option>
+                                <option value="">Private Ltd</option>
+                                <option value="">PLC</option>
+                            </select>
+                        </div>
+                        <div class="form-3Hold">
+                            <p>What type of business entity best fit your kind of business or idea?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">One man Business</option>
+                                <option value="">Private Ltd</option>
+                                <option value="">PLC</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--form 4-->
+            <div class="carousel-item">
+                <form action="">
+                    <div class="form-4">
+                    
+                        <div class="form-4Hold">
+                            <p>How much would you require to kickstart or upscale your business or idea?</p>
+                            <select name="" id="">
+                                <option value="">---Select an Option---</option>
+                                <option value="">Below N2.5M</option>
+                                <option value="">Above 2.5M</option>
+                                <option value="">From N10M</option>
+                            </select>
+                        </div>
+                    
+                    <div class="form-4Hold">
+                        <p>how would you like your business to be financed?</p>
+                        <select name="" id="">
+                            <option value="">---Select an Option---</option>
+                            <option value="">Government</option>
+                            <option value="">Bank loan</option>
+                            <option value="">Self</option>
+                        </select>
+                    </div>
+                    <div class="form-4Hold">
+                        <p>Are you ready to invest your time in this business</p>
+                        <select name="" id="">
+                            <option value="">---Select an Option---</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                            <option value="">Not now</option>
+                        </select>
+                    </div>
+                    <div class="form-4Hold">
+                        <p>Asset = ? + ?</p>
+                        <select name="" id="">
+                            <option value="">---Select an Option---</option>
+                            <option value="">Yes</option>
+                            <option value="">No</option>
+                            <option value="">I Don't get this</option>
+                        </select>
+                    </div>
+
+                    <div class="form-4Hold">
+                        <p>
+                            By clicking the register button, you agree to our 
+                            <a href="#">general terms and conditions and the ethical codes of the Power-365 Entreprenuerial show</a>
+                            and confirm that you have read our <a href="#">Privacy Policy</a>
+                            to learn how we collect, use, and share data.
+                        </p>
+                    </div>
+
+                    <div class="form-4Hold">
+                        <button>Register</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+        </div><!--Carousel inner end-->
+    
+        <!--Next and Previous Buttons-->
+        <!--
+            <button class="carousel-control-prev bg-primary" type="button" data-bs-target="#reg" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
+            <span class="text-dark">Previous</span>
+          </button>
+        -->
+          <button id="next" type="button" data-bs-target="#reg" data-bs-slide="next">Next <span class="glyphicon glyphicon-arrow-right"></span></button>
+    
+    </div> <!--carousel end-->
+    
+    </div> <!--reg end-->
+ </div> <!--holder end-->
+    
+    
+<script src="/asset/js/bootstrap.bundle.min.js"></script>
+<script src="/asset/js/bootstrap.js"></script>
+<script src="/asset/js/bootstrap.min.js"></script>
+</body>
+</html>
